@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fashion Design Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,42 +19,40 @@
   </header>
 
   <section id="home">
-    <h1>Welcome to my Fashion Design Portfolio!</h1>
-    <p>Discover my latest creations and designs.</p>
+    <div class="intro">
+      <h1>Welcome to My Fashion Portfolio</h1>
+      <p>Discover the latest trends and designs.</p>
+    </div>
   </section>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Insert information about yourself and your background in fashion design.</p>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Insert your bio and background here.</p>
+    </div>
   </section>
 
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <!-- Add images and descriptions of your designs -->
-    <div class="portfolio-item">
-      <img src="image1.jpg" alt="Design 1">
-      <p>Description of Design 1</p>
+    <div class="gallery">
+      <!-- Insert images and descriptions of your fashion designs here -->
+      <!-- Example: <img src="image.jpg" alt="Design Name"> -->
     </div>
-    <div class="portfolio-item">
-      <img src="image2.jpg" alt="Design 2">
-      <p>Description of Design 2</p>
-    </div>
-    <!-- Add more portfolio items as needed -->
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Contact information: email, phone, social media, etc.</p>
-    <form action="submit.php" method="post">
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your Email">
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2023 Your Name</p>
+    <p>&copy; 2023 Fashion Portfolio. All rights reserved.</p>
   </footer>
 </body>
 </html>
